@@ -1,7 +1,11 @@
 {
   "name": "my-kapirti-project",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "website-tanitim",
+    "menu-app"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +20,5 @@
     "url": "https://github.com/aquaxistaken/my-kapirti-project/issues"
   },
   "homepage": "https://github.com/aquaxistaken/my-kapirti-project#readme",
-  "description": "",
-  "private": true, 
-  "workspaces": [ 
-    "website-tanitim", 
-    "menu-app"        
-  ]
+  "description": ""
 }
