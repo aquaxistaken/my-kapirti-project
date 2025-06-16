@@ -1,0 +1,32 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/menu/:path*",
+      "destination": "/menu/:path*"
+    },
+    {
+      "source": "/menu",
+      "destination": "/menu"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/website/:path*"
+    }
+  ],
+  "builds": [
+    {
+      "src": "website-tanitim/package.json",
+      "use": "@vercel/next",
+      "config": { "distDir": "website" }
+    },
+    {
+      "src": "menu-app/package.json",
+      "use": "@vercel/next",
+      "config": { "distDir": "menu" }
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}
